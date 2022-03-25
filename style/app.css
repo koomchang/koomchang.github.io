@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color: #373c3f;
+    background-color: black;
     color : white;
     font-family: 'Yeon Sung', cursive;
 }
@@ -13,7 +13,7 @@ header{
     padding-top: 30px;
     padding-bottom : 30px;
     text-align: center;
-    background-color: #373c3f;
+    background-color: black;
     font-size: 70px;
 }
 .container{
@@ -37,8 +37,45 @@ a{
 .home{
     display: flex;
 }
-
 .welcome{
+    margin-top: 60px;
+}
+
+.welcome>p{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.first{
+    white-space: nowrap;
+    overflow: hidden;    
+    animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+
+.second{
+    white-space: nowrap;
+    overflow: hidden;    
+    animation: animated-text 2s steps(30,end) 2s 1 normal both;
+}
+
+.third{
+    white-space: nowrap;
+    overflow: hidden;    
+    animation: animated-text 2s steps(30,end) 4s 1 normal both;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+}
+
+.about{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.contact{
     font-size: 30px;
     margin-top: 40px;
     margin-left: 50px;
@@ -56,9 +93,14 @@ footer{
     margin: 10px;
 }
 
-img{
+.mypic{
     margin : 30px;
     background-size: cover;
     height:70vh;
     border-radius: 5%;
+}
+
+.contact{
+    margin-top: 60px;
+    margin-left: 200px;;
 }
