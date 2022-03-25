@@ -82,10 +82,11 @@ a{
 }
 
 footer{
+    position:fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom : 5vh;
+    bottom : 0vh;
     font-size: 30px;
 }
 
