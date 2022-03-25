@@ -1,1 +1,64 @@
 @import "reset.css";
+html{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #373c3f;
+    color : white;
+    font-family: 'Yeon Sung', cursive;
+}
+
+header{
+    padding-top: 30px;
+    padding-bottom : 30px;
+    text-align: center;
+    background-color: #373c3f;
+    font-size: 70px;
+}
+.container{
+    position: relative;
+    display:flex;
+    text-align: center;
+    right : 0;
+}
+
+.nav-box{
+    margin: 10px;
+    margin-left: 40px;
+    font-family: inherit;
+    font-size: 30px;
+}
+
+a{
+    color: white;
+}
+
+.home{
+    display: flex;
+}
+
+.welcome{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom : 5vh;
+    font-size: 30px;
+}
+
+.foot{
+    margin: 10px;
+}
+
+img{
+    margin : 30px;
+    background-size: cover;
+    height:70vh;
+    border-radius: 5%;
+}
