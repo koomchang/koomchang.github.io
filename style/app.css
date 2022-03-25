@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    padding : 30px 100px;
+    padding : 30px 105px;
     background-color: black;
     color : white;
     font-family: 'Yeon Sung', cursive;
@@ -23,6 +23,7 @@ header{
     text-align: center;
     right : 0;
 }
+
 
 .nav-box{
     margin: 10px;
@@ -83,6 +84,36 @@ a{
     margin-top: 40px;
     margin-left: 300px;
 }
+.about1, .about2, .about3{
+    display:flex;
+}
+
+.about_p{
+    margin: 50px 20px;
+    font-size: 35px; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 0;
+    position: relative;   
+}
+
+  .about_p:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffb000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .about_p:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
 .contact{
     font-size: 30px;
     margin-top: 40px;
@@ -102,6 +133,12 @@ footer{
 
 .foot{
     margin: 10px;
+    font-family: neon;
+    color: #FB4264;
+    text-shadow: 0 0 3vw #F40A35;
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
 }
 
 .mypic{
@@ -114,3 +151,21 @@ footer{
     margin-top: 60px;
     margin-left: 200px;;
 }
+
+
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+  }
